@@ -1,0 +1,5 @@
+d = int(input())
+if d//10 >= d%10 or len(str(d)) != 2:print('invalid')
+elif d == 12:print('pre = 89\npost = 13')
+elif d == 89:print('pre = 79\npost = 12')
+else:print(d-1 if (d-1)//10 < (d-1)%10 else ((d//10-1)*10)+9);print(d+1 if (d+1)//10 < (d+1)%10 else ((d//10+1)*10+((d+1)//10)+1))
